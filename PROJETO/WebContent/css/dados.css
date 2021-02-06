@@ -1,0 +1,43 @@
+
+.principal3 {
+
+position: absolute;
+width: 1366px;
+height: 720px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(255.86deg, #1FCCC2 26.99%, rgba(31, 204, 194, 0.31) 62.5%);
+
+}
+
+h1 {
+	
+	margin: 20px;
+}
+
+
+
+/*********BOTÃO DE ADICIONAR******/
+.Button1 {
+	background-color:blue;
+	padding:5px 10px 5px 10px;
+	color: #ffffff;
+	font-size:1.2em;
+	font-weight:720;
+	border-radius:5px;
+	border:0;
+	cursor:pointer;
+	margin:10px;
+	
+}
+/*********BOX DE DADOS ******/
+.box1{
+	margin:10px;
+	width:320px;
+	padding:5px;
+	margin-bottom:10px;
+	border:1px solid #66bbff;
+	border-radius:5px;
+	
+}
