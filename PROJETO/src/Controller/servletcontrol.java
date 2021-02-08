@@ -88,8 +88,52 @@ public class servletcontrol extends HttpServlet {
 		// TRAZER O METODO inserirUsuario PASSANDO O OBJETO USUARIO
 		dao.inserirUsuario(usuario);
 		// REDIRECIONAR PARA O DOCUMENTO Usuarios.jsp
-		response.sendRedirect("main");
+		response.sendRedirect("main");1
 
 	}
+
+
+	
+	/***************************************************************************************/
+	/*************** ESTRUTURA PARA REMOVER DADOS DO MYSQL *********************************/
+ 
+
+	/*
+	 * public void remover (int ID) { try {
+	 * 
+	 * Connection con = conectar(); String sql = "DELETE  FROM usuarios WHERE = ?";
+	 * PreparedStatement statement = con.prepareStatement(sql);
+	 * 
+	 * statement.setInt(1, ID); statement.execute(); connection.close();
+	 * 
+	 * 
+	 * 
+	 * } catch (Exception e) { System.out.println(e); }
+	 * 
+	 * }
+	 * 
+	 */
+
+	/***************************************************************************/
+	/**************** METODO PARA ATUALIZAR DADOS DO MYSQL**********************/
+
+	
+
+	/* public void atualizar(JB usuarios) {
+
+		String sql = "UPDATE usuarios SET NOME='PEDRO' WHERE EMAIL=Pedrogks17@gmail.com";
+		try {
+			Connection con = DriverManager.getConnection(url, "root", "root123");
+			PreparedStatement atualizar = con.prepareStatement(sql);
+			atualizar.executeUpdate();
+			con.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+	*/
+
+
 
 }
