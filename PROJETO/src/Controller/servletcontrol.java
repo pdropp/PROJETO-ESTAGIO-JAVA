@@ -98,28 +98,29 @@ public class servletcontrol extends HttpServlet {
 	/*************** ESTRUTURA PARA REMOVER DADOS DO MYSQL *********************************/
  
 
-	/*
-	 * public void remover (int ID) { try {
-	 * 
-	 * Connection con = conectar(); String sql = "DELETE  FROM usuarios WHERE = ?";
-	 * PreparedStatement statement = con.prepareStatement(sql);
-	 * 
-	 * statement.setInt(1, ID); statement.execute(); connection.close();
-	 * 
-	 * 
-	 * 
-	 * } catch (Exception e) { System.out.println(e); }
-	 * 
-	 * }
-	 * 
-	 */
+
+	  public void remover (int ID) { 
+		  
+		 try {
+	  
+	  Connection con = conectar(); String sql = "DELETE  FROM usuarios WHERE = ?";
+	  PreparedStatement statement = con.prepareStatement(sql);
+	  
+	  statement.setInt(1, ID); statement.execute(); connection.close();
+	 
+	 
+		} catch (Exception e) { System.out.println(e); }
+	 
+	  }
+	  
+	 
 
 	/***************************************************************************/
 	/**************** METODO PARA ATUALIZAR DADOS DO MYSQL**********************/
 
 	
 
-	/* public void atualizar(JB usuarios) {
+	 public void atualizar(JB usuarios) {
 
 		String sql = "UPDATE usuarios SET NOME='PEDRO' WHERE EMAIL=Pedrogks17@gmail.com";
 		try {
@@ -132,6 +133,6 @@ public class servletcontrol extends HttpServlet {
 		}
 
 	}
-	*/
+	
 
 }
