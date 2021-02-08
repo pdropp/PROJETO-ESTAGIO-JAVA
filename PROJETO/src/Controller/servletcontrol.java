@@ -24,7 +24,7 @@ public class servletcontrol extends HttpServlet {
 		// TODO Auto-generated constructor stub
 	}
 
-	/******************** PRINCIPAL FUN«AO DO SERVLET ****************/
+	/******************** PRINCIPAL FUN√áAO DO SERVLET ****************/
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -40,7 +40,7 @@ public class servletcontrol extends HttpServlet {
 		}
 
 		/************************************/
-		/* PARA TESTAR A CONEX√O */
+		/* PARA TESTAR A CONEX√ÉO */
 		// dao.testeConexao();
 
 	}
@@ -50,7 +50,7 @@ public class servletcontrol extends HttpServlet {
 	protected void usuarios(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		// CRIA«√O DE UM BOJETO QUE IRARECEBER OS DADOS DO JAVABENS
+		// CRIA√á√ÉO DE UM BOJETO QUE IRARECEBER OS DADOS DO JAVABENS
 		ArrayList<JB> lista = dao.listaUsuarios();
 		
 		
@@ -91,5 +91,47 @@ public class servletcontrol extends HttpServlet {
 		response.sendRedirect("main");
 
 	}
+	
+	
+	
+	/***************************************************************************************/
+	/*************** ESTRUTURA PARA REMOVER DADOS DO MYSQL *********************************/
+ 
+
+	/*
+	 * public void remover (int ID) { try {
+	 * 
+	 * Connection con = conectar(); String sql = "DELETE  FROM usuarios WHERE = ?";
+	 * PreparedStatement statement = con.prepareStatement(sql);
+	 * 
+	 * statement.setInt(1, ID); statement.execute(); connection.close();
+	 * 
+	 * 
+	 * 
+	 * } catch (Exception e) { System.out.println(e); }
+	 * 
+	 * }
+	 * 
+	 */
+
+	/***************************************************************************/
+	/**************** METODO PARA ATUALIZAR DADOS DO MYSQL**********************/
+
+	
+
+	/* public void atualizar(JB usuarios) {
+
+		String sql = "UPDATE usuarios SET NOME='PEDRO' WHERE EMAIL=Pedrogks17@gmail.com";
+		try {
+			Connection con = DriverManager.getConnection(url, "root", "root123");
+			PreparedStatement atualizar = con.prepareStatement(sql);
+			atualizar.executeUpdate();
+			con.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+	*/
 
 }
